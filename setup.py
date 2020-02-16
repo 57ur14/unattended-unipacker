@@ -2,7 +2,7 @@ import unipacker
 from setuptools import setup, find_packages
 
 __VERSION__ = unipacker.__VERSION__
-__NAME__ = 'unipacker'
+__NAME__ = 'unattended-unipacker'
 
 with open('README.md') as readme_file:
     README = readme_file.read()
@@ -11,13 +11,13 @@ setup(
     name=__NAME__,
     version=__VERSION__,
     python_requires='>=3.6',
-    author='Un{i}packer Team',
-    author_email='masrepus97@gmail.com',
-    description='Automatic and platform-independent unpacker for Windows binaries based on emulation',
+    author='Un{i}packer Team & Sturla Bae',
+    author_email='ntnu-rgb@outlook.com',
+    description='Fork of unipacker that allows unattended unpacking',
     long_description=README,
     long_description_content_type='text/markdown',
     license='GPL-2.0',
-    url='https://github.com/unipacker/unipacker',
+    url='https://github.com/ntnu-rgb/unattended-unipacker',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
