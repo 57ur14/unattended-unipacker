@@ -30,6 +30,8 @@ class DefaultUnpacker(object):
         self.endaddr = self.get_tail_jump()
 
     def get_tail_jump(self):
+        return # Avoid asking for input from the user
+        """
         while True:
             try:
                 endaddr = input("Define manual end address for emulation (leave empty for max value): ")
@@ -40,8 +42,11 @@ class DefaultUnpacker(object):
             except ValueError:
                 print("Incorrect end address!")
         return endaddr
+        """
 
     def get_entrypoint(self):
+        return # Avoid asking for input from the user
+        """
         while True:
             try:
                 startaddr = input(
@@ -54,6 +59,7 @@ class DefaultUnpacker(object):
             except ValueError:
                 print("Incorrect start address!")
         return startaddr
+        """
 
     def dump(self, uc, apicall_handler, sample, path="unpacked.exe"):
         self.dumper.dump_image(uc, self.BASE_ADDR, self.virtualmemorysize, apicall_handler, sample, path)
