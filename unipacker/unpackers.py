@@ -30,7 +30,7 @@ class DefaultUnpacker(object):
         self.endaddr = self.get_tail_jump()
 
     def get_tail_jump(self):
-        return # Avoid asking for input from the user
+        return sys.maxsize      # Avoid asking for input from the user
         """
         while True:
             try:
@@ -45,7 +45,7 @@ class DefaultUnpacker(object):
         """
 
     def get_entrypoint(self):
-        return # Avoid asking for input from the user
+        return                  # Avoid asking for input from the user
         """
         while True:
             try:
