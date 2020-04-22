@@ -3,7 +3,7 @@
 This is a fork of [unipacker](https://github.com/unipacker/unipacker) made to allow unattended unpacking (for automated unpacking without the need for user input).
 
 ## Installing ##
-* ``git clone https://github.com/ntnu-rgb/unattended-unipacker.git``
+* ``git clone https://github.com/57ur14/unattended-unipacker.git``
 * ``cd unattended-unipacker``
 * ``python3 setup.py install``
 
